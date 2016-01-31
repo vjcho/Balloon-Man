@@ -30,7 +30,7 @@ public class EnemyScript : MonoBehaviour {
         //check if enemy has spawned
         if(hasSpawn == false)
         {
-            if (GetComponent<Renderer>().isVisible)
+            if (GetComponent<Renderer>().IsVisibleFrom(Camera.main))
             {
                 Spawn();
             }
@@ -48,7 +48,7 @@ public class EnemyScript : MonoBehaviour {
             }*/
 
             //if out of camera, destroy game object
-            if(GetComponent<Renderer>().isVisible == false)
+            if(GetComponent<Renderer>().IsVisibleFrom(Camera.main) == false)
             {
                 Destroy(gameObject);
             }
