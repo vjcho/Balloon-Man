@@ -6,7 +6,7 @@ using System.Collections;
 /// </summary>
 
 
-public class PlayerScript : MonoBehaviour {
+public class BalloonScript : MonoBehaviour {
 
 	// The speed.
 	public Vector2 speed = new Vector2 (10, 0);
