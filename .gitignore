@@ -1,1 +1,19 @@
 Temp/*
+Library/*
+Build/*
+
+!Library/*.asset
+!Library/AssetImportState
+!Library/AssetVersioning.db
+!Library/BuildPlayer.prefs
+!Library/ScriptMapper
+!Library/assetserverchachev3
+!Library/expandedItems
+!Library/guidmapper
+!Library/unity default resources
+!Library/uity editor resources
+!Library/metadata/
+
+*pidb
+*userprefs
+
