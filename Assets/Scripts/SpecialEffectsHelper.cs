@@ -36,6 +36,7 @@ public class SpecialEffectsHelper : MonoBehaviour {
 	{
 		ParticleSystem newParticleSystem = Instantiate (prefab, position, Quaternion.identity) as ParticleSystem;
 
+		newParticleSystem.Play ();
 		//Make sure it will be destroyed
 		Destroy(newParticleSystem.gameObject, newParticleSystem.startLifetime);
 

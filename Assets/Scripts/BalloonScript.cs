@@ -14,6 +14,9 @@ public class BalloonScript : MonoBehaviour {
 	// Store the movement.
 	private Vector2 movement;
 
+	void Start(){
+	}
+
 	// Update is called once per frame
 	void Update () {
 		// Retrieve axis information
@@ -41,20 +44,18 @@ public class BalloonScript : MonoBehaviour {
 		GetComponent<Rigidbody2D> ().velocity = movement;
 	}//FixedUpdate
 
-	void OnCollisionEnter2D(Collision2D collision)
+	void OnTriggerEnter2D(Collider2D collision)
 	{
 		//bool damagePlayer = false;
-
 		// Collision with enemy
 		EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
 		if (enemy != null)
 		{
+			Destroy(collision.gameObject);
 			//kill player
 			SpecialEffectsHelper.Instance.Explosion(transform.position);
 			//damagePlayer = true;
 			Destroy(gameObject);
 		}
-
-			
 	}
 }
