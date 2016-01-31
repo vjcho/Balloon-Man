@@ -11,8 +11,8 @@ Build/*
 !Library/expandedItems
 !Library/guidmapper
 !Library/unity default resources
-!Library/uity editor resources
-!Library/metadata/
+!Library/unity editor resources
+#!Library/metadata/
 
 *pidb
 *userprefs
