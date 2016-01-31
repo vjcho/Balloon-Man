@@ -40,4 +40,21 @@ public class BalloonScript : MonoBehaviour {
 	{
 		GetComponent<Rigidbody2D> ().velocity = movement;
 	}//FixedUpdate
+
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		//bool damagePlayer = false;
+
+		// Collision with enemy
+		EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
+		if (enemy != null)
+		{
+			//kill player
+			SpecialEffectsHelper.Instance.Explosion(transform.position);
+			//damagePlayer = true;
+			Destroy(gameObject);
+		}
+
+			
+	}
 }

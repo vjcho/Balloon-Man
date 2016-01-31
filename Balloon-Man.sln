@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{193D45C0-86AF-575D-9874-E2E28D91B6F5}") = "Balloon-Man", "Assembly-CSharp.csproj", "{B8A2094A-C97A-FCB5-2676-A3AE539E64AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8A2094A-C97A-FCB5-2676-A3AE539E64AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A2094A-C97A-FCB5-2676-A3AE539E64AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A2094A-C97A-FCB5-2676-A3AE539E64AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A2094A-C97A-FCB5-2676-A3AE539E64AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
